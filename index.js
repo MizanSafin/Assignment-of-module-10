@@ -55,7 +55,7 @@ document.querySelector(
 // 5) Write a function named sortArrayDescending that takes an array of numbers and returns a new array sorted in descending order.
 
 function sortArrayDescending(numbersArr) {
-  let result = numbersArr.sort((a, b) => b - a)
+  let result = numbersArr.sort((a, b) =>  a - b).reverse()
   return result
 }
 
