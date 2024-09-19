@@ -86,9 +86,9 @@ document.querySelector(
 // 7) Write a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u, A, E, I, O, U) in the string. It should filter vowels from the string.
 
 function countVowels(str) {
-    let vowels = "aeiou";
-    let modifiedStr = str.toLowerCase();
-    return modifiedStr.split("").filter(char => vowels.includes(char)).length;
+    let vowels = "aeiouAEIOU";
+    
+    return str.split("").filter(char => vowels.includes(char)).length;
 }
 
 document.querySelector(
@@ -112,6 +112,6 @@ function findAverage(numbersArr){
 
 document.querySelector(
   ".display"
-).innerHTML += `<li>the average of all numbers ${numbersArr} is :  ${findAverage(
+).innerHTML += `<li>The average of all numbers ${numbersArr} is :  ${findAverage(
   numbersArr
 )}</li>`
